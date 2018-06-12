@@ -1,0 +1,6 @@
+{
+	"ImportPath": "github.com/ashtan19/HerokuTest",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v80",
+	"Deps": []
+}
