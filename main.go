@@ -34,7 +34,7 @@ func main() {
 	  panic(err)
 	}
 
-
+	/*
 	response, err := http.Get("https://api.coinbase.com/v2/prices/spot?currency=USD")
 	if err != nil {
 		fmt.Printf("The HTTP request failed with error %s\n", err)
@@ -42,7 +42,7 @@ func main() {
 		data, _ := ioutil.ReadAll(response.Body)
 		fmt.Printf(string(data))
 	}
-	 /*
+	 
 	jsonData := map[string]string{"firstname":"Maple", "lastname": "Liu"}
 	jsonValue, _ := json.Marshal(jsonData)
 	//Requesting with a Header, Can add more customization
