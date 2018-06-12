@@ -6,7 +6,17 @@ import (
 	"net/http"
 	"bytes"
 	"encoding/json"
+	"os"
 )
+
+func determineListenAddress() (string, error) {
+	port := os.Getenv("PORT")
+	if port == "" {
+		return "", fmt.Errorf("$Port not set")
+	}
+	return ":" + port, nil
+}
+
 
 func main() {
 	response, err := http.Get("https://api.coinbase.com/v2/prices/spot?currency=USD")
