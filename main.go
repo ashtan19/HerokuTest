@@ -7,6 +7,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"os"
+	"log"
 )
  
 func determineListenAddress() (string, error) {
