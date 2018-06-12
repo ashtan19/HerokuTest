@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"os"
 )
-go 
+ 
 func determineListenAddress() (string, error) {
 	port := os.Getenv("PORT")
 	if port == "" {
